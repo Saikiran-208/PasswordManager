@@ -10,7 +10,7 @@ const Manager = () => {
   const [passwordArray, setpasswordArray] = useState([]);
 
   const getPasswords = async () => {
-    let req = await fetch("http://localhost:3000/")
+    let req = await fetch("https://passbackend-1.onrender.com/")
     let passwords = await req.json()
     setpasswordArray(passwords)
 
@@ -48,10 +48,10 @@ const Manager = () => {
 
   const savePassword = async () => {
     if(form.site.length>3 && form.username.length > 3 && form.password.length > 3){
-      await fetch("http://localhost:3000/",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:form.id})
+      await fetch("https://passbackend-1.onrender.com/",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:form.id})
       })
     setpasswordArray([...passwordArray, { ...form, id: uuidv4() }]);
-      await fetch("http://localhost:3000/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...form,id:uuidv4()})
+      await fetch("https://passbackend-1.onrender.com/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...form,id:uuidv4()})
       })
 
     // localStorage.setItem(
@@ -68,7 +68,7 @@ const Manager = () => {
 
   const deletePassword =async (id) => {
     setpasswordArray(passwordArray.filter((item) => item.id !== id));
-    await fetch("http://localhost:3000/",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id})
+    await fetch("https://passbackend-1.onrender.com/",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id})
       })
     // localStorage.setItem(
     //   "passwords",
