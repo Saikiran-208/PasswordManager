@@ -1,31 +1,39 @@
-# AirbnbClone
+# Password Manager
 
-A full-stack Airbnb clone built using Next.js, React, and Prisma ORM, with dynamic property listings, authentication, and booking features.
-
-🔗 Live Demo: https://airbnb-clone-kappa-topaz.vercel.app
+A full-stack Password Manager web application built with React, Node.js, Express, and MongoDB. The app allows users to securely store and manage their multiple account passwords.
 
 ---
 
 ## 🧠 Tech Stack
 
-- **Frontend:** Next.js, React
-- **Backend:** Node.js, API routes
-- **Database:** MongoDB (via Prisma ORM)
-- **Authentication:** NextAuth / custom auth
-- **Deployment:** Vercel
-- **Styling:** Tailwind CSS
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **Authentication:** JWT / Session
+- **Styling:** CSS
+- **Deployment:** (Add link if deployed)
 - **Version Control:** Git, GitHub
 
 ---
 
 ## 🌟 Features
 
-- User authentication and secure login/sign-up
-- Dynamic property listing and detail pages
-- Search filters (location, dates, guests)
-- Basic reservation booking functionality
-- Responsive UI for web and mobile screens
+- User Authentication (Sign-Up and Login)
+- Store multiple passwords securely
+- Add, Update, and Delete password entries
+- Password visibility toggle
+- Responsive UI design
 
 ---
 
+## 🚀 Live Demo
 
+
+
+Example:
+> https://your-password-manager-demo.vercel.app
+
+---
+
+```bash
+git clone https://github.com/Saikiran-208/PasswordManager.git
