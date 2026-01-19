@@ -30,7 +30,7 @@ A full-stack Password Manager web application built with React, Node.js, Express
 
 
 
-Example:
+
 > https://your-password-manager-demo.vercel.app
 
 ---
